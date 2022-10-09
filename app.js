@@ -48,6 +48,9 @@ function Question(title, answers) {
 
 let q1 = new Question('Question 1', ['Answer 1', 'Answer 2', 'Answer 3'])
 
+let quiz = new Quiz()
+quiz.addQuestion(q1)
+
 function startQuiz() {
   let start = document.getElementById('start')
   start.style.display = 'none'
