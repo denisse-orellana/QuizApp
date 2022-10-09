@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="App de encuesta OPP y DOM">
+    <meta name="author" content="Denisse Orellana">
+    <link rel="stylesheet" href="main.css">
+    <title>App de Encuesta</title>
+  </head>
+  <body>
+    <main class="quiz">
+
+      <section id="start">
+        <h1>Welcome to this Quiz</h1>
+        <form>
+          <p>Please tell us your first name and lastname</p>
+          <input class="start__input" type="text">   
+        </form>
+        <button class="start__button" onclick="startQuiz()">Take the quiz!</button>
+      </section>
+
+      <section id="quiz__questions" class="quiz__questions">
+        <h2>Question description</h2>
+        <ul class="question__answers">
+          <li class="answer">Opcion 1</li>
+          <li class="answer">Opcion 2</li>
+          <li class="answer">Opcion 3</li>
+        </ul>
+      </section>
+
+      <section id="quiz__final" class="quiz__final"></section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
