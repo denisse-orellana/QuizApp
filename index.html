@@ -12,25 +12,27 @@
   <body>
     <main class="quiz">
 
-      <section id="start">
-        <h1>Welcome to this Quiz</h1>
+      <section id="welcome">
+        <h1>Welcome to our Quiz</h1>
         <form>
-          <p>Please tell us your first name and lastname</p>
-          <input class="start__input" type="text">   
+          <p>Please tell us your full name</p>
+          <input class="welcome__input" type="text">   
         </form>
-        <button class="start__button" onclick="startQuiz()">Take the quiz!</button>
+        <button class="welcome__button" onclick="startQuiz()">Take the quiz!</button>
       </section>
 
-      <section id="quiz__questions" class="quiz__questions">
-        <h2>Question description</h2>
-        <ul class="question__answers">
-          <li class="answer">Opcion 1</li>
+      <section id="quiz__questions" class="quiz__questions" style="display:none">
+        <!-- <h2>Question description</h2> -->
+        <!-- <ul class="question__answers"> -->
+          <!-- <li class="answer">Opcion 1</li>
           <li class="answer">Opcion 2</li>
-          <li class="answer">Opcion 3</li>
-        </ul>
+          <li class="answer">Opcion 3</li> -->
+        <!-- </ul> -->
       </section>
 
-      <section id="quiz__final" class="quiz__final"></section>
+      <section id="results" class="results" style="display:none">
+        <h1>Thanks for participating in our Quiz</h3>
+      </section>
     </main>
     <script src="app.js"></script>
   </body>
