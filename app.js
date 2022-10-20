@@ -62,9 +62,9 @@ function Question(title, answers) {
     questions.append(questionAnswers)
   }
   this.saveAnswer = (event) => {
-    let allAswers = []
+    let allAnswers = []
     let selectAnswer = event.target
-    allAswers.push(selectAnswer.id)
+    allAnswers.push(selectAnswer.id)
     quiz.counter++
 
     setTimeout(function(){
@@ -73,7 +73,7 @@ function Question(title, answers) {
       quiz.showCurrentQuestion()
     }, 1000)
 
-    console.log(allAswers)
+    // console.log(allAnswers)
   }
 }
 
